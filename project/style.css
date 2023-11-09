@@ -1,0 +1,8 @@
+:root{
+  --dark-violete: #9989d9;
+  --off-orange: #f7764f;
+  --off-white: #FCFBF4;
+}
+body{
+  background-color: var(--off-orange);
+}
