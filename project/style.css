@@ -1,8 +1,28 @@
+body{
+  background-color: var(--off-orange);
+}
+
 :root{
   --dark-violete: #9989d9;
   --off-orange: #f7765f;
   --off-white: #FCFBF4;
 }
-body{
-  background-color: var(--off-orange);
+.card {
+  width:24%;
+  background-color: var(--off-white);
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 22%;
+  margin-bottom: 25px;
+
+}
+.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  margin: 1rem, auto;
 }
