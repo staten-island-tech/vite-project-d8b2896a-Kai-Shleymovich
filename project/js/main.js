@@ -2,7 +2,8 @@ import {clothes} from './clothes'
 const domselectors = {
     flexwrap : document.querySelector(".flex-wrapper"),
     skater : document.querySelector("#skater"),
-    hype : document.querySelector('#hype')
+    hype : document.querySelector('#hype'),
+    all : docum
 }
 
 let filteredclothes=clothes
@@ -32,6 +33,9 @@ domselectors.skater.addEventListener("click", function (event){
     domselectors.hype.addEventListener("click", function (event){
         filter("hypebeast")
         })
+        domselectors.hype.addEventListener("click", function (event){
+            filter("hypebeast")
+            })
     
 
 document.addEventListener("DOMContentLoaded", printcards); 
