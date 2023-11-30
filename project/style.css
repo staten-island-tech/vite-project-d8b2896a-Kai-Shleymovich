@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kenia&display=swap");
 body{
   background-color: var(--off-orange);
+  font-family: "Kenia", cursive;
 }
 
 :root{
@@ -37,4 +39,12 @@ body{
 }
 .desc{
   width: auto;
+}
+.flex_wrapper{
+ background-color: var(--dark-violete);
+ border-radius: 75px;
+}
+h1{
+  text-align: center;
+
 }

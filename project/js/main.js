@@ -3,7 +3,7 @@ const domselectors = {
     flexwrap : document.querySelector(".flex-wrapper"),
     skater : document.querySelector("#skater"),
     hype : document.querySelector('#hype'),
-    all : docum
+    all : document.querySelector('#all')
 }
 
 let filteredclothes=clothes
@@ -30,11 +30,11 @@ function filter(x){
 domselectors.skater.addEventListener("click", function (event){
     filter("skater")
     })
-    domselectors.hype.addEventListener("click", function (event){
+domselectors.hype.addEventListener("click", function (event){
         filter("hypebeast")
         })
-        domselectors.hype.addEventListener("click", function (event){
-            filter("hypebeast")
+domselectors.all.addEventListener("click", function (event){
+            filter("street wear")
             })
     
 
