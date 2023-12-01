@@ -3,7 +3,9 @@ const domselectors = {
     flexwrap : document.querySelector(".flex-wrapper"),
     skater : document.querySelector("#skater"),
     hype : document.querySelector('#hype'),
-    all : document.querySelector('#all')
+    all : document.querySelector('#all'),
+    change_theme: document.querySelector('#change_theme')
+
 }
 
 let filteredclothes=clothes
@@ -15,9 +17,10 @@ function printcards(){
     `<div class="card">
       <h2>${cloth.name_of_peice}</h2>
       <img class="card-img" src=${cloth.img} alt="">
-     <p class="desc"> ${cloth.Type_of_clothes}</p>
-     <p class='desc'>  ${cloth.seller}</p>
-     <p class='desc'> $${cloth.Price_in_usd} </p>
+     <p class="desc">
+      ${cloth.Type_of_clothes}
+      ${cloth.seller}
+      $${cloth.Price_in_usd} </p>
      </div>`)
 })}
 function filter(x){
@@ -39,3 +42,14 @@ domselectors.all.addEventListener("click", function (event){
     
 
 document.addEventListener("DOMContentLoaded", printcards); 
+
+
+domselectors.change_theme.addEventListener("click", function () {
+    if (document.body.classList.contains("dark")) {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    }
+  });
