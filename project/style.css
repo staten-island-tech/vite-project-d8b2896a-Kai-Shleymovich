@@ -8,12 +8,12 @@ body{
   --dark-violete: #2a2346;
   --off-orange: #f7765f;
   --off-white: #d6d2b3;
-  --primary: var(--dark-violete);
+  --primary: var(--dark-violete)
 }
 .light{
   --primary: var(--dark-violete);
   --secondary: var(--off-orange);
-  --third: var(var(--off-white))
+  --third: (var(--off-white)
 }
 
 .dark{
