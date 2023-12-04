@@ -18,7 +18,8 @@ body{
 
 .dark{
   --primary: var(--dark-violete);
-  --secondary: var(var(--off-white))
+  --secondary: var(--off-white);
+  --third: var(--off-orange);
 }
 
 .card {
