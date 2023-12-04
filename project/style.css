@@ -13,7 +13,7 @@ body{
 .light{
   --primary: var(--dark-violete);
   --secondary: var(--off-orange);
-  --third: (var(--off-white)
+  --third: var(--off-white);
 }
 
 .dark{
